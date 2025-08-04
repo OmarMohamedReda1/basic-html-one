@@ -1,2 +1,131 @@
-# basic-html-one
-basic first page with html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TechVerse 2025</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="TechVerse 2025 event page">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+
+  <header>
+    <img src="logo.png" alt="logo" width="100">
+    <h1>TechVerse 2025 Conference</h1>
+
+    
+    <nav>
+      <a href="#overview">Overview</a> |
+      <a href="#speakers">Speakers</a> |
+      <a href="#media">Media</a> |
+      <a href="#register">Register</a> |
+      <a href="#footer">Contact</a>
+    </nav>
+  </header>
+
+  <!-- about the event -->
+  <section id="overview">
+    <h2>About the Event</h2>
+    <p>This is a 3 day tech event. Speakers will talk about new technology.</p>
+
+    <blockquote>
+      “TechVerse is where innovation meets inspiration.” – Organizer
+    </blockquote>
+
+    <h3>Topics:</h3>
+    <ul>
+      <li>AI</li>
+      <li>Cybersecurity</li>
+      <li>Blockchain</li>
+    </ul>
+
+    <h3>Daily Plan:</h3>
+    <ol>
+      <li>Day 1: Software</li>
+      <li>Day 2: Ethics</li>
+      <li>Day 3: Startups</li>
+    </ol>
+  </section>
+
+  <!-- speakers list -->
+  <section id="speakers">
+    <h2>Speakers</h2>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Topic</th>
+        <th>Company</th>
+      </tr>
+      <tr>
+        <td>Alice Kim</td>
+        <td>AI Ethics</td>
+        <td>FutureTech</td>
+      </tr>
+      <tr>
+        <td>Jamal Rivera</td>
+        <td>Cybersecurity</td>
+        <td>SecureNet</td>
+      </tr>
+      <tr>
+        <td>Sophia Zhang</td>
+        <td>Blockchain</td>
+        <td>OpenLedger</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- media stuff -->
+  <section id="media">
+    <h2>Watch and Listen</h2>
+
+    <iframe width="300" height="200" src="https://www.youtube.com/embed/example"></iframe>
+
+    <p>Audio Welcome:</p>
+    <audio controls>
+      <source src="welcome.mp3" type="audio/mpeg">
+    </audio>
+
+    <figure>
+      <img src="teaser.jpg" alt="teaser image" width="300">
+      <figcaption>Something cool is coming in 2025!</figcaption>
+    </figure>
+  </section>
+
+  <!-- register form -->
+  <section id="register">
+    <h2>Register Now</h2>
+    <form>
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob"><br><br>
+
+      <p>Track:</p>
+      <input type="radio" id="dev" name="track" value="dev">
+      <label for="dev">Developer</label><br>
+      <input type="radio" id="biz" name="track" value="biz">
+      <label for="biz">Business</label><br><br>
+
+      <p>Topics You Like:</p>
+      <input type="checkbox" id="ai" name="topic" value="AI">
+      <label for="ai">AI</label><br>
+      <input type="checkbox" id="sec" name="topic" value="Security">
+      <label for="sec">Security</label><br><br>
+
+      <label for="country">Country:</label><br>
+      <select id="country" name="country">
+        <option value="">--Select--</option>
+        <option value="us">USA</option>
+        <option value="eg">Egypt</option>
+        <option value="de">Germany</option>
+      </select><br><br>
+
+      <label for="msg">Message:</label><br>
+      <textarea id="msg" name="msg" rows="4" cols="30"></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </sectio
